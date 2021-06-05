@@ -245,7 +245,7 @@ async def tmeme(event):
     message = wspam.split()
     await event.delete()
     for word in message:
-        await event.respond(/mirror {word})
+        await event.respond(/mirror (word))
     if BOTLOG:
         if event.is_private:
             await event.client.send_message(
